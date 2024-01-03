@@ -1,0 +1,172 @@
+:root {
+   --amarillo:#EAC926;
+   --azul:#03264C;
+   --celeste:#1259c3;
+   --grisOscuro:#666;
+   --grisClaro:#ebebeb;
+   --verde:#39b54a; 
+
+   --familyRoboto:'roboto';
+
+   --cuerpoTexto:12px;
+   --titulares:24px;
+   --precios:18px;
+   --descuentos:16px;
+   --descripciones:16px;
+}
+body {
+    margin: 0px;
+}
+.header-home {
+ background-color: var(--amarillo);
+
+}
+
+ img.logo {
+    width: 500px;
+    margin: 60px 0px 15px 60px;
+ }
+
+
+.header-comprar{
+    text-align: center;
+    font-family: var(--familyRoboto);
+    font-size: 12px;
+    
+}
+
+    
+
+.header-busqueda{
+    width: 45%;
+color: #666;
+ border:solid 2px black;
+font-size: 35px;
+background-color: white;
+margin: 15px 0px 0px 60px ;
+font-family: var(--familyRoboto);
+}
+
+.glass {
+ color:black;
+ 
+ padding: 10px;
+ 
+}
+
+
+
+.burger-menu i{
+    color: white;
+    background-color: var(--celeste);
+    padding: 45px;
+    margin-bottom: 40px;
+
+   
+}
+
+.burger-menu {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.lista-Nav{
+ font-family: var(--familyRoboto);
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ font-size: var(--descripciones);
+}
+img.banner{
+    width: 980px;
+    height: 240px;
+   
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: var(--descripciones);
+}
+
+
+/* productos*/
+.subtitulo {
+    color:var(--grisOscuro);
+    text-align: center;
+    font-family: var(--familyRoboto);
+    
+
+}
+p.precio {
+    color: var(--grisOscuro);
+  
+    font-size: var(--precios);
+    text-align: center;
+}
+p.descuento {
+ color: var(--grisOscuro);
+ 
+ font-size: var(--descuentos);
+ text-align: center;
+}
+h3.producto {
+color: var(--grisOscuro);
+font-family: var(--familyRoboto);
+font-size: var(--descripciones);
+text-align: center;
+}
+
+img.img-producto {
+  width: 500px;
+  height: 500px;
+  margin: 0px auto;
+  
+}
+
+
+/*footer*/
+
+.footer-article{
+
+    text-align: center;
+    
+}
+.footer-article article.items i{
+    
+    color: var(--celeste) ;
+    font-size: 90px;
+}
+
+.footer-article h3 {
+    font-size: var(--titulares) ;
+   color: black;
+    font-family: var(--familyRoboto);
+    text-align: center;
+    margin: 0px;
+     }
+
+.footer-article p{
+    color:var(--grisOscuro);
+  font-size: var(--cuerpoTexto);
+  font-family: var(--familyRoboto);
+  text-align: center;
+  margin: 0px;
+   
+}
+
+.footer-article div p.copy{
+    font-family: var(--familyRoboto);
+   margin: 0px 200px 50px 20px;
+   color: var(--grisOscuro);
+}
+
+
+.div-footer{
+  
+    margin: 20px 100px 100px 100px;
+}
+
+

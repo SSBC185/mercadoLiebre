@@ -15,8 +15,61 @@
    --descripciones:16px;
 }
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--grisClaro);
 }
+
+main {
+    width: 90%;
+    background-color: var(--grisClaro);
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    padding: 0px 15px 15px 15px; 
+    border-radius: 10px;
+  
+
+}
+.main .banner{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+section {
+    margin:10 10 50px 10;
+    padding: 20px;
+    
+}
+
+ .div-producto{
+    border-top: 1px  #ebebeb solid;
+    padding: 15px;
+    margin: 50px 0;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px var(--grisClaro) solid;
+    border-bottom: 5px var(--grisClaro) solid;
+    
+
+    
+ }
+
+ img.img-producto {
+    max-width: 100%;
+    border-bottom:  5px var(--grisClaro) solid;
+   
+ }
+
+ .precio .descuento .producto {
+    margin: 110;
+ }
+ 
 .header-home {
  background-color: var(--amarillo);
 
@@ -31,11 +84,12 @@ body {
 .header-comprar{
     text-align: center;
     font-family: var(--familyRoboto);
-    font-size: 12px;
-    
+    font-size: 20px;
 }
 
-    
+.header-comprar i {
+    font-size: 40px;
+}
 
 .header-busqueda{
     width: 45%;
@@ -45,30 +99,24 @@ font-size: 35px;
 background-color: white;
 margin: 15px 0px 0px 60px ;
 font-family: var(--familyRoboto);
-}
-
-.glass {
- color:black;
- 
- padding: 10px;
- 
-}
+display: flex;
+align-items: center;
 
 
-
-.burger-menu i{
-    color: white;
-    background-color: var(--celeste);
-    padding: 45px;
-    margin-bottom: 40px;
-
-   
 }
 
 .burger-menu {
     width: 60px;
     height: 60px;
     margin: 0 auto;
+    background-color: var(--celeste);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+  
 }
 
 .lista-Nav{
@@ -81,7 +129,6 @@ font-family: var(--familyRoboto);
 img.banner{
     width: 980px;
     height: 240px;
-   
 }
 
 
@@ -93,37 +140,50 @@ a {
 
 
 /* productos*/
+
+
+.main-producto section .div-producto{
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 .subtitulo {
     color:var(--grisOscuro);
+     font-size: 65px;
+    font-family: var(--familyRoboto);   
+    margin: 10px 0px 20px;
     text-align: center;
-    font-family: var(--familyRoboto);
-    
 
 }
 p.precio {
     color: var(--grisOscuro);
-  
     font-size: var(--precios);
-    text-align: center;
+   
 }
 p.descuento {
- color: var(--grisOscuro);
+ color: var(--verde);
  
  font-size: var(--descuentos);
- text-align: center;
+
 }
+
 h3.producto {
 color: var(--grisOscuro);
 font-family: var(--familyRoboto);
 font-size: var(--descripciones);
-text-align: center;
+
 }
 
 img.img-producto {
-  width: 500px;
-  height: 500px;
+width: 100%;
   margin: 0px auto;
   
+  
+}
+.div-producto .fa-truck {
+    border: 1px var(--verde) solid;
+    padding: 3px 15px 15px 3px;
+    margin: 10px 0;
+    border-radius: 50%;
+    color: var(--verde);
 }
 
 
@@ -170,3 +230,39 @@ img.img-producto {
 }
 
 
+@media (min-width: 361px) {
+    main {
+        width: 80%; 
+    }
+
+    img.banner {
+        width: 100%; 
+    }
+
+    .div-producto {
+        margin: 30px 0; 
+    }
+
+    .header-busqueda {
+        width: 60%; 
+    }
+}
+
+
+@media  (min-width: 769px) {
+    main {
+        width: 70%; 
+    }
+
+    img.banner {
+        width: 980px; 
+    }
+
+    .div-producto {
+        margin: 50px 0; 
+    }
+
+    .header-busqueda {
+        width: 45%; 
+    }
+}

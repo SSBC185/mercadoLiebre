@@ -5,6 +5,9 @@
    --grisOscuro:#666;
    --grisClaro:#ebebeb;
    --verde:#39b54a; 
+   --blanco:#ffffff;
+   --borde:#ebebeb;
+   --negro:#000000;
 
    --familyRoboto:'roboto';
 
@@ -28,7 +31,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid var(--borde);
     padding: 0px 15px 15px 15px; 
     border-radius: 10px;
   
@@ -47,11 +50,11 @@ section {
 }
 
  .div-producto{
-    border-top: 1px  #ebebeb solid;
+    border-top: 1px var(--borde) solid;
     padding: 15px;
     margin: 50px 0;
     border-radius: 10px;
-    background-color: white;
+    background-color:var(--blanco);
     margin-bottom: 10px;
     border: 1px var(--grisClaro) solid;
     border-bottom: 5px var(--grisClaro) solid;
@@ -94,9 +97,9 @@ section {
 .header-busqueda{
     width: 45%;
 color: #666;
- border:solid 2px black;
+ border:solid 2px var(--negro);
 font-size: 35px;
-background-color: white;
+background-color: var(--blanco);
 margin: 15px 0px 0px 60px ;
 font-family: var(--familyRoboto);
 display: flex;
@@ -114,7 +117,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--blanco);
     font-size: 30px;
   
 }
@@ -134,7 +137,7 @@ img.banner{
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--negro);
     font-size: var(--descripciones);
 }
 
@@ -202,7 +205,7 @@ width: 100%;
 
 .footer-article h3 {
     font-size: var(--titulares) ;
-   color: black;
+   color:var(--negro);
     font-family: var(--familyRoboto);
     text-align: center;
     margin: 0px;

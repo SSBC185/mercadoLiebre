@@ -44,8 +44,16 @@ main {
 
 
 section {
-    margin:10px 10px 50px 10px;
-    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5em;
+    flex-wrap: wrap;
     
 }
 
@@ -58,6 +66,7 @@ section {
     margin-bottom: 10px;
     border: 1px var(--grisClaro) solid;
     border-bottom: 5px var(--grisClaro) solid;
+    width: 40%;
     
 
     
@@ -71,16 +80,21 @@ section {
 
  .precio .descuento .producto {
     margin: 110px;
+    display: flex;
  }
  
 .header-home {
  background-color: var(--amarillo);
+ 
 
 }
 
  img.logo {
-    width: 500px;
-    margin: 60px 0px 15px 60px;
+    width: 40%;
+    margin: 0px 0px 15px 60px;
+    padding: 40px;
+    display: flex;
+    text-align: right;
  }
 
 
@@ -88,6 +102,11 @@ section {
     text-align: center;
     font-family: var(--familyRoboto);
     font-size: 20px;
+    margin: 0 30px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .header-comprar i {
@@ -128,10 +147,28 @@ align-items: center;
  padding: 0;
  list-style: none;
  font-size: var(--descripciones);
+ display: flex;
+ justify-content: flex-start;
+ gap: 2em;
+ 
+ 
 }
+.list-Nav{
+    font-family: var(--familyRoboto);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--descripciones);
+    display: flex;
+    justify-content: flex-end;
+    gap:2em;
+    
+    
+   }
+
 img.banner{
-    width: 980px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -144,7 +181,7 @@ a {
 
 /* productos*/
 
-
+.main .producto{}
 .main-producto section .div-producto{
    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }

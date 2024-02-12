@@ -54,17 +54,19 @@ img{
 ul{
     list-style-type: none;
     font-family: var(--familyRoboto);
-    margin: 0;
-    padding: 0;
+    display: flex;
     list-style: none;
     font-size: var(--descripciones);
+    justify-content: space-between;
 }
 a {
     text-decoration: none;
     color: var(--negro);
     font-size: var(--descripciones);
 }
-
+.header-nav{
+    display: none;
+}
 .banner img{
     width: 100%;
 }
@@ -227,7 +229,7 @@ font-size: var(--descripciones);
 
 /*footer*/
 
-footer{
+footer {
     background-color: var(--blanco);
     display: flex;
     flex-direction: column;
@@ -237,7 +239,7 @@ footer{
     width: 100%;
 }
 
-.footer div{
+.div-footer{
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -247,21 +249,21 @@ footer{
 
     
 }
-.footer i{
+.div-footer i{
     padding: 5px;
     color: var(--celeste) ;
     font-size: 2.5rem;
     
 }
 
-.footer div h4 {
+.div-footer h4 {
     font-size: var(--titulares) ;
    color: var(--grisOscuro);
     font-family: var(--familyRoboto);
 
      }
 
-.footer div p{
+.div-footer p{
     color:var(--grisOscuro);
   font-size: var(--cuerpoTexto);
   font-family: var(--familyRoboto);
@@ -272,7 +274,8 @@ footer{
 footer .copy{
     font-family: var(--familyRoboto);
    color: var(--grisOscuro);
-   font-size: var(--descripciones);
+   font-size: var(--cuerpoTexto);
+ 
 }
 
 

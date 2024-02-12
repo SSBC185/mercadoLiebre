@@ -46,30 +46,7 @@ section {
     
 }
 
- .div-producto{
-    border-top: 1px  #ebebeb solid;
-    padding: 15px;
-    margin: 50px 0;
-    border-radius: 10px;
-    background-color: white;
-    margin-bottom: 10px;
-    border: 1px var(--grisClaro) solid;
-    border-bottom: 5px var(--grisClaro) solid;
-    
 
-    
- }
-
- img.img-producto {
-    max-width: 100%;
-    border-bottom:  5px var(--grisClaro) solid;
-   
- }
-
- .precio .descuento .producto {
-    margin: 110px;
- }
- 
 .header-home {
  background-color: var(--amarillo);
 
@@ -140,6 +117,31 @@ a {
 
 
 /* productos*/
+ .div-producto{
+    border-top: 1px  #ebebeb solid;
+    padding: 15px;
+    margin: 50px 0;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px var(--grisClaro) solid;
+    border-bottom: 5px var(--grisClaro) solid;
+   
+    
+
+    
+ }
+
+ img.img-producto {
+    max-width: 100%;
+    border-bottom:  5px var(--grisClaro) solid;
+   
+ }
+
+ .precio .descuento .producto {
+    margin: 110px;
+ }
+ 
 
 
 .main-producto section .div-producto{

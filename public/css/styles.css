@@ -106,9 +106,10 @@ vertical-align: middle;
 }
 
 #header-busqueda input{
-    width: 80%;
-    height: 100%;   
+    width: 100%; /* El input ocupará el 100% del ancho del contenedor padre */
+    height: 100%; /* El input ocupará el 100% de la altura del contenedor padre */
     border: none;
+    box-sizing: border-box;
 }
 #header-busqueda button{
     width: 20%;
@@ -156,12 +157,15 @@ h2{
 
 
 .productos{
-    box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+    box-shadow: 0px 0px 0px 0px rgb(0,10,0,0);
     background-color: var(--blanco);
     margin-bottom: 1rem;
     padding-top: 15px;
     width: 100%;
     border-radius: 3px;
+    transition: transform 1.2s, box-shadow 1.2s;
+    
+
 }
 .productos div{
     border-top: 1px var(--grisClaro) solid;
@@ -173,11 +177,30 @@ h2{
     gap: 1rem;
 
 }
-.informacion-productos{
+
+.productos:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+}
+
+.productos:hover .detalle-producto {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.detalle-producto{
+    transition: opacity 0.5s, transform 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+}
+
+.informacion-productos {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 .producto-img{
     font-weight: bolder;
     color: var(--grisOscuro);
@@ -223,7 +246,7 @@ font-size: var(--descripciones);
 
 .envio .fa-truck {
     border: 1px var(--verde) solid;
-    padding: 3px 15px 15px 3px;
+    padding: 4px 4px 4px 4px;
     margin: 10px 0;
     border-radius: 50%;
     color: var(--verde);
@@ -234,8 +257,11 @@ font-size: var(--descripciones);
    position: absolute;
    right: 12px;
    top: -12px;
+   transition: rotate 1.2s;
 }
-
+.fa-truck:hover {
+    rotate: -90deg;
+  }
 
 /*footer*/
 
@@ -263,9 +289,12 @@ footer {
     padding: 5px;
     color: var(--celeste) ;
     font-size: 2.5rem;
+    transition: color 0.5s;
     
 }
-
+footer i:hover {
+    color: var(--amarillo);
+  }
 .div-footer h4 {
     font-size: var(--titulares) ;
    color: var(--grisOscuro);
@@ -286,6 +315,21 @@ footer .copy{
    color: var(--grisOscuro);
    font-size: var(--cuerpoTexto);
  
+}
+
+.btn-login{
+    background-color: #007bff;
+    border: none;
+    padding: 15px auto; 
+    font-size: 12px; 
+    border-radius: 5px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s
+}
+
+.btn-login:hover{
+    background-color: #0022AA;
 }
 
 
